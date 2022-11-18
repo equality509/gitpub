@@ -19,15 +19,13 @@
 <h2><%=drinks.name%></h2>
 <img src=<%=drinks.image%> alt="">
 <h3>Price $<%=drinks.price%></h3>
+
+
+<h2><%=food.name%></h2>
+<img src=<%=food.image%> alt="">
+<h3>Price $<%=food.price%></h3>
+   
 <a href="/drinks">Back</a>
-
-      <ul> 
-          <% for( let i=0; i < drinks.length; i++) {%>
-       <li> <a href="/drinks/<%=i%>"><%= drinks[i].name %></a>
-    </li> 
-    <%}%>
-</ul>
-
 
 
 </body>
