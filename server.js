@@ -7,11 +7,20 @@ app.get('/drinks', (req, res ) => {
     {drinks: drinks})
 });
 
-app.get('/drinks/:id', (req, res) => {
-    res.send(req.params.id)
-})
+// app.get('/drinks/:id', (req, res) => {
+//     res.send(req.params.id)
+// })
 
 
+app.get('/drinks/:index', (req, res) => {
+    // res.render(template, data)
+    res.render(
+        'drinks_show.ejs', 
+    {
+        drinks: drinks[req.params.index],
+        index: req.params.index
+    });
+});
 
 
 
